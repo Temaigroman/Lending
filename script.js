@@ -9,9 +9,9 @@ const paginationCircles = [];
 const sliderWidth = slider.clientWidth;
 const images = [
     '../assets/gallery1_min.svg',
-    '../assets/gallery2_min.svg',
-    '../assets/gallery3_min.svg',
-    '../assets/gallery2_min.svg',
+    '../assets/gallery1_min.svg',
+    '../assets/gallery1_min.svg',
+    '../assets/gallery1_min.svg',
 ];
 
 function createPaginationCircle() {
@@ -19,7 +19,6 @@ function createPaginationCircle() {
     div.className = "pagination-circle";
     bottom.appendChild(div);
     paginationCircles.push(div);
-
     for (let i = 0; i < images.length; i++) {
         const img = new Image();
         img.src = images[i];
@@ -28,7 +27,6 @@ function createPaginationCircle() {
         div.style.backgroundImage = `url(${images[i]})`;
     }
 }
-
 
 function addPagination() {
     slides.forEach(createPaginationCircle);
@@ -59,7 +57,7 @@ function changeSlide(slideIndex) {
 
 function nextSlide() {
     let newSlideIndex = currentSlideIndex + 1;
-    if(newSlideIndex > slides.length - 1) {
+    if (newSlideIndex > slides.length - 1) {
         newSlideIndex = 0;
     }
     changeSlide(newSlideIndex);
@@ -67,7 +65,7 @@ function nextSlide() {
 
 function previousSlide() {
     let newSlideIndex = currentSlideIndex - 1;
-    if(newSlideIndex < 0) {
+    if (newSlideIndex < 0) {
         newSlideIndex = slides.length - 1;
     }
     changeSlide(newSlideIndex);
