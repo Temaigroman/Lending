@@ -9,32 +9,28 @@ const paginationCircles = [];
 const sliderWidth = slider.clientWidth;
 const images = [
     '../assets/gallery1_min.svg',
-    '../assets/gallery1_min.svg',
-    '../assets/gallery1_min.svg',
-    '../assets/gallery1_min.svg',
+    '../assets/gallery2_min.svg',
+    '../assets/close.svg',
+    '../assets/camer.svg',
 ];
 
-function createPaginationCircle() {
+function createPaginationCircle(index) {
     const div = document.createElement("div");
     div.className = "pagination-circle";
+    div.style.backgroundImage = `url(${images[index]})`; // Уникальное изображение для каждого div
     bottom.appendChild(div);
     paginationCircles.push(div);
-    for (let i = 0; i < images.length; i++) {
-        const img = new Image();
-        img.src = images[i];
-        img.style.display = 'none';
-        div.appendChild(img);
-        div.style.backgroundImage = `url(${images[i]})`;
-    }
 }
 
+// Измените вызов функции addPagination
 function addPagination() {
-    slides.forEach(createPaginationCircle);
+    images.forEach((_, index) => createPaginationCircle(index)); // Передаем индекс в createPaginationCircle
     paginationCircles[0].classList.add("active");
     paginationCircles.forEach((circle, index) => {
         circle.addEventListener("click", () => changeSlide(index));
     });
 }
+
 
 function addActiveClass() {
     paginationCircles[currentSlideIndex].classList.add("active");
