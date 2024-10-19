@@ -10,8 +10,8 @@ const sliderWidth = slider.clientWidth;
 const images = [
     '../assets/gallery1_min.svg',
     '../assets/gallery2_min.svg',
-    '../assets/close.svg',
-    '../assets/camer.svg',
+    '../assets/gallery1_min.svg',
+    '../assets/gallery1_min.svg',
 ];
 
 function createPaginationCircle(index) {

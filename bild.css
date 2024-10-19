@@ -28,7 +28,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  min-width: 100vw;
+  min-width: 1280px;
   min-height: 3582px;
   background: black;
 }
@@ -36,15 +36,10 @@
 
 .header {
   display: flex;
-  flex: 0 0 auto;
-  flex-direction: row;
-  gap: 91px;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-top: 40px;
-  flex-wrap: nowrap;
-  padding-left: 150px;
+  margin-top: 43px;
+  padding-left: 50px;
   padding-right: 220px;
+  width: 100%;
 }
 
 .banner-image {
@@ -58,10 +53,11 @@
 .immersive-text1 {
   box-sizing: border-box;
   flex: 0 0 auto;
-  width: 106px;
+  width: 104px;
+  height: 25px;
+  margin-left: 13%;
   padding: 0;
   padding-top: 5px;
-  margin: 0;
   font: 400 20px/24px Invole;
   color: white;
   text-align: center;
@@ -70,12 +66,12 @@
 
 .multiverse {
   flex: 0 0 auto;
-  margin-top: 95px;
+  margin-top: 112px;
 }
 
 .cosmic-heading {
   padding: 0;
-  padding-left: 210px;
+  padding-left: 195px;
   margin: 0;
   font: 400 181px/163px MorfinSans;
   color: white;
@@ -86,12 +82,12 @@
 .poster {
   box-sizing: border-box;
   width: 100%;
-  margin-top: 120px;
+  margin-top: 12%;
 }
 
 .event-title-text-style {
   padding: 0;
-  padding-left: 210px;
+  padding-left: 20%;
   margin: 0;
   font: 400 85px/85px MorfinSans;
   color: white;
@@ -103,14 +99,15 @@
   justify-content: center;
   flex-direction: column;
   row-gap: 30px;
-  height: 100vh;
+  height: 385px;
   background-color: black;
+  margin-top: 13%;
 }
 
 #frame {
   overflow: hidden;
-  width: 800px;
-  height: 500px;
+  width: 1057px;
+  height: 385px;
   border-radius: 10px;
 }
 
@@ -141,13 +138,12 @@
 
 .pagination-circle {
   width: 250px;
-  height: 157px;
-  border: 2px solid white;
+  height: 225px;
   border-radius: 10%;
 }
 
 .active {
-   background-color: purple; 
+   /* background-color: purple;  */
 }
 
 #bottom {
@@ -156,7 +152,7 @@
 }
 
 .special_project {
-  margin-top: 140px;
+  margin-top: 150px;
   width: 100%;
   height: 1017px;
   background-image: url('assets/special_project.png');
@@ -186,6 +182,7 @@
 .conception {
   width: 100%;
   text-align: center;
+  margin-top: 65px;
   
 }
 .conception h2 {
@@ -198,7 +195,7 @@
 .wrapper_tags {
   display: inline-flex;
   justify-content: space-between;
-  width: 55%;
+  width: 75%;
 }
 .close {
   display: flex;
@@ -248,14 +245,15 @@
   color: white;
   display: flex;
   text-align: center;
-  margin-top: 130px;
-  width: 72%;
+  margin-top: 187px;
+  width: 100%;
 }
 
 .contacts h2 {
   font: 400 55px/55px MorfinSans;
   margin-top: -25px;
-}
+  margin-left: 13%;  
+ }
 
 .wrapper_contacts {
   margin-left: 120px;
@@ -266,7 +264,7 @@
 .vk {
   border: solid white;
   border-radius: 10px;
-  width: 100%;
+  width: 80%;
 }
 
 .vk a {
@@ -282,10 +280,5 @@
   color: white;
   border: solid white;
   border-radius: 10px;
-  width: 100%;
+  width: 80%;
 }
-
-
-
-
-
