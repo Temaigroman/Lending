@@ -4,14 +4,9 @@
   
 }
 
-
-:root {
+ :root {
   --index: calc(1vw + 1vh);
-  --text: #e7e7e0;
-  --transition: transform .75s cubic-bezier(.075, .5, 0, 1);
-  --font: font-family:'MorfinSans'
-}
-
+ }
 @font-face {
   font-family: MorfinSans;
   src: url(fonts/MorfinSans-Regular.ttf);
@@ -36,9 +31,9 @@
 
 .header {
   display: flex;
-  margin-top: 43px;
-  padding-left: 50px;
-  padding-right: 220px;
+  margin-top: 15vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
   width: 100%;
 }
 
@@ -55,7 +50,7 @@
   flex: 0 0 auto;
   width: 104px;
   height: 25px;
-  margin-left: 13%;
+  margin-left: 10%;
   padding: 0;
   padding-top: 5px;
   font: 400 20px/24px Invole;
@@ -82,12 +77,12 @@
 .poster {
   box-sizing: border-box;
   width: 100%;
-  margin-top: 12%;
+  margin-top: 10%;
 }
 
 .event-title-text-style {
   padding: 0;
-  padding-left: 20%;
+  padding-left: 16%;
   margin: 0;
   font: 400 85px/85px MorfinSans;
   color: white;
@@ -154,19 +149,18 @@
 .special_project {
   margin-top: 150px;
   width: 100%;
-  height: 1017px;
-  background-image: url('assets/special_project.png');
+  height: 720px;
+  background-image: url('assets/Specal_project.svg');
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   display: flex;
   justify-content: center;
-
 }
 
 .special_project_description {
-  margin-top: 150px;
-  width: 38%;
+  margin-top: 24px;
+  width: 45%;
 
 }
 
@@ -195,7 +189,7 @@
 .wrapper_tags {
   display: inline-flex;
   justify-content: space-between;
-  width: 75%;
+  width: 90%;
 }
 .close {
   display: flex;
