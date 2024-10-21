@@ -97,7 +97,7 @@
   row-gap: 30px;
   height: 650px;
   background-color: black;
-  margin-top: 13%;
+  margin-top: 5%;
 }
 
 #frame {
@@ -158,9 +158,16 @@
 }
 
 #bottom {
+  box-sizing: border-box;
   display: flex;
   column-gap: 25px;
+  overflow-x: hidden;
+  height:225px;
+  width: 1100px; /* Установите ширину в соответствии с вашими требованиями */
+  transition: 1s ease-in-out;
+  position: relative; 
 }
+
 
 .special_project {
   margin-top: 20px;

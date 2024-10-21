@@ -11,8 +11,10 @@ const images = [
     '../assets/gallery1_min.svg',
     '../assets/gallery2_min.svg',
     '../assets/gallery1_min.svg',
+    '../assets/gallery2_min.svg',
     '../assets/gallery1_min.svg',
-];
+    '../assets/gallery2_min.svg',
+]
 
 function createPaginationCircle(index) {
     const div = document.createElement("div");
