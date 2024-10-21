@@ -1,12 +1,13 @@
 * {
-  margin:0;
+  margin: 0;
   box-sizing: border-box;
-  
+
 }
 
- :root {
+:root {
   --index: calc(1vw + 1vh);
- }
+}
+
 @font-face {
   font-family: MorfinSans;
   src: url(fonts/MorfinSans-Regular.ttf);
@@ -61,12 +62,12 @@
 
 .multiverse {
   flex: 0 0 auto;
-  margin-top: 112px;
+  margin-top: 9%;
 }
 
 .cosmic-heading {
   padding: 0;
-  padding-left: 195px;
+  padding-left: 1%;
   margin: 0;
   font: 400 181px/163px MorfinSans;
   color: white;
@@ -94,7 +95,7 @@
   justify-content: center;
   flex-direction: column;
   row-gap: 30px;
-  height: 385px;
+  height: 650px;
   background-color: black;
   margin-top: 13%;
 }
@@ -111,6 +112,13 @@
   align-items: center;
   justify-content: center;
 }
+
+#bottom_slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 #slider {
   width: 100%;
@@ -129,7 +137,15 @@
 .arrow {
   width: 120px;
   height: 120px;
+  }
+
+.arrow_bottom {
+  width: 120px;
+  height: 120px;
+  margin: -65px 0 0 0;
+
 }
+
 
 .pagination-circle {
   width: 250px;
@@ -138,7 +154,7 @@
 }
 
 .active {
-   /* background-color: purple;  */
+  /* background-color: purple;  */
 }
 
 #bottom {
@@ -147,7 +163,7 @@
 }
 
 .special_project {
-  margin-top: 150px;
+  margin-top: 20px;
   width: 100%;
   height: 720px;
   background-image: url('assets/Specal_project.svg');
@@ -173,17 +189,19 @@
   color: rgb(255, 255, 255);
   font: 400 20px/24px Invole;
 }
+
 .conception {
   width: 100%;
   text-align: center;
   margin-top: 65px;
-  
+
 }
+
 .conception h2 {
   color: #e7e7e0;
   font: 400 85px/85px MorfinSans;
   color: white;
-  padding-left: 600px;
+  padding-left: 53%;
 }
 
 .wrapper_tags {
@@ -191,47 +209,61 @@
   justify-content: space-between;
   width: 90%;
 }
+
 .close {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-image: url('assets/close.svg');
-  width:339px;
+  width: 339px;
   height: 327px;
-  
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
 }
+
 .camera {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-image: url('assets/camer.svg');
-  width:339px;
+  width: 339px;
   height: 327px;
-  
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
+
 }
+
 .world {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-image: url('assets/world.svg');
-  width:339px;
+  width: 339px;
   height: 327px;
-  }
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
+}
 
 .close:hover {
-  background-image: url('assets/close_hover.svg');
+  background-image: url('assets/close_hover.png');
   background-color: white;
   border-radius: 10px;
+  transform: rotateY(0.5turn); /* Оставляем только переворот */
 }
+
+
 .camera:hover {
-  background-image: url('assets/camera_close.svg');
+  background-image: url('assets/m_camera_close.png');
   background-color: white;
   border-radius: 10px;
+  transform: rotateY(0.5turn); /* Оставляем только переворот */
 }
+
 .world:hover {
-  background-image: url('assets/world_hover.svg');
+  background-image: url('assets/m_world_hover.png');
   background-color: white;
   border-radius: 10px;
+  transform: rotateY(0.5turn); /* Оставляем только переворот */
 }
 
 
@@ -246,8 +278,8 @@
 .contacts h2 {
   font: 400 55px/55px MorfinSans;
   margin-top: -25px;
-  margin-left: 13%;  
- }
+  margin-left: 13%;
+}
 
 .wrapper_contacts {
   margin-left: 120px;
