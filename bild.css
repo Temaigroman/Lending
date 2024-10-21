@@ -142,15 +142,16 @@
 .arrow_bottom {
   width: 120px;
   height: 120px;
-  margin: -65px 0 0 0;
+  margin: -193px 0 0 0;
 
 }
-
 
 .pagination-circle {
   width: 250px;
   height: 225px;
   border-radius: 10%;
+  transition: transform 1s ease-in-out;
+  flex-shrink: 0; 
 }
 
 .active {
@@ -160,12 +161,14 @@
 #bottom {
   box-sizing: border-box;
   display: flex;
-  column-gap: 25px;
-  overflow-x: hidden;
-  height:225px;
-  width: 1100px; /* Установите ширину в соответствии с вашими требованиями */
+  column-gap: 25px;  
+  overflow: hidden;
+  width: 1057px;
+  height: 385px;
   transition: 1s ease-in-out;
   position: relative; 
+ 
+
 }
 
 

@@ -1,33 +1,37 @@
- document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const bottom = document.getElementById('bottom');
-    const circles = Array.from(bottom.getElementsByClassName('pagination-circle'));
     const leftArrow = document.querySelector('.bottom_arrow-left');
     const rightArrow = document.querySelector('.bottom_arrow-right');
-    const visibleCount = 4; // Количество видимых элементов
+    const circles = Array.from(bottom.getElementsByClassName('pagination-circle')); // Преобразование в массив
     let currentIndex = 0; // Индекс первого видимого элемента
+    const visibleCount = 4; // Количество видимых элементов
+    const elementWidth = 275; // Ширина элемента
+    const gap = 25; // Отступ между элементами
 
     function updatePosition() {
-        const offset = currentIndex * 110; // 100px ширина + 10px отступ
-        bottom.style.transform = `translateX(-${offset}px)`;
+        const offset = currentIndex * (elementWidth + gap); // Учитываем ширину элемента и отступ
+
+        circles.forEach((circle) => {
+            // Применяем равномерное смещение ко всем элементам
+            const translateX = -offset;
+            circle.style.transform = `translateX(${translateX}px)`;
+        });
     }
 
     leftArrow.addEventListener('click', () => {
         if (currentIndex > 0) {
             currentIndex--;
-            updatePosition();
+            updatePosition(); // Обновление позиции при клике
         }
     });
 
     rightArrow.addEventListener('click', () => {
         if (currentIndex < circles.length - visibleCount) {
             currentIndex++;
-            updatePosition();
+            updatePosition(); // Обновление позиции при клике
         }
     });
 
-    // Инициализация
-    updatePosition();
+    // Инициализация: начальные состояния без сдвига
+    updatePosition(); // Убедитесь, что эта строка не вызывает смещения в начале
 });
- 
-
-
