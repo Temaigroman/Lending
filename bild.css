@@ -204,6 +204,7 @@
 .special_project_description p {
   color: rgb(255, 255, 255);
   font: 400 20px/24px Invole;
+  margin-top: 8%;
 }
 
 .conception {
