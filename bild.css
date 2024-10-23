@@ -154,7 +154,6 @@
 .pagination-circle {
   width: 250px;
   height: 225px;
-  border-radius: 10%;
   transition: transform 1s ease-in-out;
   flex-shrink: 0; 
   border-color: white;
