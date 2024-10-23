@@ -234,8 +234,9 @@
   background-image: url('assets/close.svg');
   width: 339px;
   height: 327px;
-  transition: 1s ease-in-out;
+  transition: 0.6s ease-in-out;
   transform-style: preserve-3d;
+  border-radius: 5%;
 }
 
 .camera {
@@ -245,8 +246,9 @@
   background-image: url('assets/camer.svg');
   width: 339px;
   height: 327px;
-  transition: 1s ease-in-out;
+  transition: 0.6s ease-in-out;
   transform-style: preserve-3d;
+  border-radius: 5%;
 
 }
 
@@ -257,8 +259,9 @@
   background-image: url('assets/world.svg');
   width: 339px;
   height: 327px;
-  transition: 1s ease-in-out;
+  transition: 0.6s ease-in-out;
   transform-style: preserve-3d;
+  border-radius: 5%;
 }
 
 .close:hover {
