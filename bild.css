@@ -29,6 +29,10 @@
   background: black;
 }
 
+.wrapper_header {
+  width: 100%;
+  margin-left: 21%;
+}
 
 .header {
   display: flex;
@@ -54,7 +58,7 @@
   margin-left: 10%;
   padding: 0;
   padding-top: 5px;
-  font: 400 20px/24px Invole;
+  font: 400 18px/24px Invole;
   color: white;
   text-align: center;
   text-decoration: none;
