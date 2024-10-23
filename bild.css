@@ -129,6 +129,7 @@
   height: 100%;
   display: flex;
   transition: 1s ease-in-out;
+  background-color: black;
 }
 
 .slider-image {
