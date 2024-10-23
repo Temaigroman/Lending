@@ -184,7 +184,8 @@
   height: 720px;
   background-image: url('assets/Specal_project.svg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
   text-align: center;
   display: flex;
   justify-content: center;
