@@ -8,12 +8,12 @@ let currentSlideIndex = 0;
 const paginationCircles = [];
 const sliderWidth = slider.clientWidth;
 const images = [
-    '../assets/gallery1_min.svg',
-    '../assets/gallery2_min.svg',
-    '../assets/gallery1_min.svg',
-    '../assets/gallery2_min.svg',
-    '../assets/gallery1_min.svg',
-    '../assets/gallery2_min.svg',
+    'assets/gallery1_min.svg',
+    'assets/gallery2_min.svg',
+    'assets/gallery1_min.svg',
+    'assets/gallery2_min.svg',
+    'assets/gallery1_min.svg',
+    'assets/gallery2_min.svg',
 ]
 
 function createPaginationCircle(index) {
