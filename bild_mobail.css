@@ -51,7 +51,7 @@
 		row-gap: 15px;
 		height: 50vh;
 		background-color: black;
-		margin-top: 60%;
+		margin-top: 15%;
 	}
 
 	#frame {
@@ -67,26 +67,87 @@
 		display: flex;
 		transition: 1s ease-in-out;
 		background-color: black;
-		
+
 	}
-.arrow {
-	display: none;
-}
 
-.slider-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* изменено */
-  flex-shrink: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
+	.arrow {
+		display: none;
+	}
+
+	.slider-image {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		/* изменено */
+		flex-shrink: 0;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	#bottom {
+		box-sizing: border-box;
+		display: flex;
+		column-gap: 25px;
+		overflow: hidden;
+		width: 33vw;
+		height: 25vh;
+		transition: 1s ease-in-out;
+		position: relative;
+	}
+
+	.arrow_bottom {
+		display: none;
+	}
+
+	.pagination-circle {
+		width: 33vw;
+		height: 25vh;
+		transition: transform 1s ease-in-out;
+		flex-shrink: 0;
+		border-color: white;
+	}
+
+	.special_project {
+		margin-top: 10%;
+		width: 100%;
+		height: 90vh;
+		background-image: url('assets/Specal_project.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+	}
+
+	.special_project_description {
+		margin-top: -10%;
+		width: 100%;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		flex-direction: column;
 
 
+	}
+
+	.special_project_description h2 {
+		color: rgb(255, 255, 255);
+		font: 400 15px/16px Invole;
+		/* Убираем фиксированную ширину */
+		width: auto;
+		/* Центрирование текста по горизонтали */
+		text-align: center;
+	}
 
 
-
+	.special_project_description p {
+		color: rgb(255, 255, 255);
+		font: 400 5px/8px Invole;
+		margin-top: 8%;
+		text-align: center;
+	}
 
 
 
