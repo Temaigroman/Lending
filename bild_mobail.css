@@ -55,6 +55,7 @@
 		margin: 0;
 		font: 400 45px/25px MorfinSans;
 		color: white;
+		margin-bottom: 10%;
 	}
 
 	#slider-container {
@@ -65,7 +66,7 @@
 		row-gap: 15px;
 		height: 50vh;
 		background-color: black;
-		margin-top: 15%;
+		
 	}
 
 	#frame {
