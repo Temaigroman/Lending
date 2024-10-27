@@ -86,6 +86,7 @@
 	}
 
 	#bottom {
+		
 		box-sizing: border-box;
 		display: flex;
 		column-gap: 25px;
@@ -214,5 +215,53 @@
 		transform-style: preserve-3d;
 		border-radius: 5%;
 	}
+
+	.contacts {
+		color: white;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+	}
+	
+	.contacts h2 {
+		display: none;
+	}
+	
+	.wrapper_contacts {
+		font: 400 45px/45px Invole;
+		width:100%;
+		margin-right: 13vw ;
+	}
+	
+	.vk {
+		border: solid white;
+		border-radius: 10px;
+		width: 80%;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+	}
+	
+	.vk a {
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		font-size: 3.8vh;
+	}
+	
+	.number {
+		position: relative;
+		
+		text-decoration: none;
+		font-size: 3.8vh;
+		color: white;
+		border: solid white;
+		border-radius: 10px;
+		width: 80%;
+	}
+
 
 }
