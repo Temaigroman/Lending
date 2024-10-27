@@ -1,0 +1,96 @@
+@media only screen and (max-width: 360px) {
+
+	.wrapper {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		min-width: 360px;
+		min-height: 2010px;
+	}
+
+	.wrapper_header {
+		display: none;
+		width: 100%;
+		margin-left: 27%;
+	}
+
+	.banner-image {
+		box-sizing: border-box;
+		display: block;
+		width: 60vw;
+		height: 15vh;
+		max-width: initial;
+
+	}
+
+	.cosmic-heading {
+		padding: 0;
+		padding-left: 1%;
+		margin: 0;
+		font: 25 60px/45px MorfinSans;
+		color: white;
+		text-align: left;
+
+	}
+
+	.event-title-text-style {
+		padding: 0;
+		padding-left: 1%;
+		margin: 0;
+		font: 400 45px/25px MorfinSans;
+		color: white;
+	}
+
+	#slider-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		row-gap: 15px;
+		height: 50vh;
+		background-color: black;
+		margin-top: 60%;
+	}
+
+	#frame {
+		overflow: hidden;
+		width: 80vw;
+		height: 50vh;
+		border-radius: 10px;
+	}
+
+	#slider {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		transition: 1s ease-in-out;
+		background-color: black;
+		
+	}
+.arrow {
+	display: none;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* изменено */
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
