@@ -122,14 +122,13 @@
 	}
 
 	.special_project_description {
-		margin-top: -10%;
+		margin-top: -40%;
 		width: 100%;
 		display: flex;
 		text-align: center;
 		justify-content: center;
 		flex-direction: column;
-
-
+		
 	}
 
 	.special_project_description h2 {
@@ -147,6 +146,8 @@
 		font: 400 5px/8px Invole;
 		margin-top: 8%;
 		text-align: center;
+		width: 35vw;
+		margin-left: 33vw;
 	}
 
 
