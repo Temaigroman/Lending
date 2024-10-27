@@ -63,16 +63,16 @@
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		row-gap: 15px;
-		height: 50vh;
+		/* row-gap: 15px; */
+		height: 230px;
 		background-color: black;
 		
 	}
 
 	#frame {
 		overflow: hidden;
-		width: 80vw;
-		height: 50vh;
+		width: 80%;
+		height: 100%;
 		border-radius: 10px;
 	}
 
