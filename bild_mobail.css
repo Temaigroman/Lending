@@ -244,6 +244,30 @@
 		background-size: contain;
 	}
 
+
+	.close:hover {
+		background-image: url('assets/close_hover.png');
+		background-color: white;
+		border-radius: 10px;
+		transform: rotateY(0.5turn); /* Оставляем только переворот */
+	}
+	
+	
+	.camera:hover {
+		background-image: url('assets/m_camera_close.png');
+		background-color: white;
+		border-radius: 10px;
+		transform: rotateY(0.5turn); /* Оставляем только переворот */
+	}
+	
+	.world:hover {
+		background-image: url('assets/m_world_hover.png');
+		background-color: white;
+		border-radius: 10px;
+		transform: rotateY(0.5turn); /* Оставляем только переворот */
+	}
+
+
 	.contacts {
 		color: white;
 		box-sizing: border-box;
