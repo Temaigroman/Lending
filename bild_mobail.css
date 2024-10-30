@@ -156,9 +156,7 @@
 	.special_project_description h2 {
 		color: rgb(255, 255, 255);
 		font: 400 15px/16px Invole;
-		/* Убираем фиксированную ширину */
 		width: auto;
-		/* Центрирование текста по горизонтали */
 		text-align: center;
 	}
 
