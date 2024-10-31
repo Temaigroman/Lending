@@ -34,9 +34,9 @@
     display: block;
   }
 	
-	.wrapper_burger {
-		padding-top: 50px;
-	}
+	/* .wrapper_burger {
+		
+	} */
 
 h1 {
   text-align: center;
@@ -56,11 +56,10 @@ h1 {
   Hamburger
 **/
 .hamburger {
-  position: absolute;
-  top: 5em;
+  position: relative;
   right: 5%;
-  margin-left: -2em;
-  width: 2em;
+  margin-left: -1em;
+  width: 3em;
   height: 45px;
   z-index: 5;
 }
@@ -68,7 +67,7 @@ h1 {
 .hamburger div {
   position: relative;
   width: 3em;
-  height: 7px;
+  height: 4px;
   border-radius: 3px;
   background-color: #ffffff;
   margin-top: 8px;
@@ -129,7 +128,7 @@ Animations
 **/
 #toggle:checked + .hamburger .top-bun {
   transform: rotate(-45deg);
-  margin-top: 25px;
+  margin-top: 5px;
 }
 #toggle:checked + .hamburger .bottom-bun {
   opacity: 0;
@@ -137,17 +136,13 @@ Animations
 }
 #toggle:checked + .hamburger .meat {
   transform: rotate(45deg);
-  margin-top: -7px;
+  margin-top: -3px;
 }
 
 #toggle:checked + .hamburger + .nav {
   top: 0;
   transform: scale(1);
 }
-
-
-
-
 	.banner-image {
 		box-sizing: border-box;
 		display: block;
@@ -156,10 +151,6 @@ Animations
 		max-width: initial;
 
 	}
-
-
-
-
 	
 	.cosmic-heading {
 		padding: 0;
@@ -225,16 +216,8 @@ Animations
 	}
 
 	#bottom {
-		
-		box-sizing: border-box;
-		display: flex;
-		column-gap: 25px;
-		overflow: hidden;
-		width: 33vw;
-		height: 25vh;
-		transition: 1s ease-in-out;
-		position: relative;
-	}
+		display: none;
+		}
 
 	.arrow_bottom {
 		display: none;
@@ -249,7 +232,6 @@ Animations
 	}
 
 	.special_project {
-		margin-top: 10%;
 		width: 100%;
 		height: 90vh;
 		background-image: url('assets/Specal_project.svg');
