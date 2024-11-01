@@ -1,4 +1,4 @@
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 451px) {
 	html, body {
     margin: 0;
     padding: 0;
@@ -164,7 +164,7 @@ Animations
 
 	.event-title-text-style {
 		padding: 0;
-		padding-left: 1%;
+		padding-left: 10%;
 		margin: 0;
 		font: 400 45px/25px MorfinSans;
 		color: white;

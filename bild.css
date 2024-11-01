@@ -62,7 +62,8 @@
   margin-left: 8%;
   padding: 0;
   padding-top: 5px;
-  font: 400 calc(var(--index) *1 ) Invole;
+  font: Invole;
+  font-size:  calc(var(--index) *1.5 ) ;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -228,6 +229,7 @@
   display: inline-flex;
   justify-content: space-between;
   width: 75%;
+  gap: 2%;
 }
 
 .close {
