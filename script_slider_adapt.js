@@ -20,7 +20,7 @@ function setImageBasedOnScreenWidth() {
 	// Получаем текущую ширину окна браузера
 	const windowWidth = window.innerWidth;
 
-	if (windowWidth <= 360) {
+	if (windowWidth <= 500) {
 			// Подставляем маленькие картинки
 			sliderImages.forEach((img, index) => img.src = smallImages[index]);
 	} else {
