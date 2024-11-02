@@ -1,5 +1,11 @@
 
-document.querySelector('.humburger_icon').addEventListener('click', function() {
-	// Меняем значение свойства backgroundImage у элемента
-	this.style.backgroundImage = 'url("../assets/humburger_icon_close_2.png")';
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleCheckbox = document.getElementById('toggle');
+  const navLinks = document.querySelectorAll('.nav a');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      toggleCheckbox.checked = false; // Скрываем меню при клике на ссылку
+    });
+  });
 });
