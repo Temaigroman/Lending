@@ -1,3 +1,4 @@
+
 // Массивы с путями к изображениям
 const smallImages = [
 	'/assets/main_poster_mob1.png',
