@@ -1,13 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-	let hamburger = document.querySelector('.nav-wrapper');
-	
-	if (hamburger) {
-			hamburger.addEventListener('click', function() {
-					let navElement = document.querySelector('.nav');
-					
-					if (navElement) {
-							navElement.style.display = 'none';
-					}
-			});
-	}
+
+document.querySelector('.humburger_icon').addEventListener('click', function() {
+	// Меняем значение свойства backgroundImage у элемента
+	this.style.backgroundImage = 'url("../assets/humburger_icon_close_2.png")';
 });

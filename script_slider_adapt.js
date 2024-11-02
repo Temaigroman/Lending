@@ -1,9 +1,9 @@
 // Массивы с путями к изображениям
 const smallImages = [
-	'assets/main_poster_mob1.png',
-	'assets/main_poster_mob2.png',
-	'assets/main_poster_mob1.png',
-	'assets/main_poster_mob2.png'
+	'/assets/main_poster_mob1.png',
+	'/assets/main_poster_mob2.png',
+	'/assets/main_poster_mob1.png',
+	'/assets/main_poster_mob2.png'
 ];
 
 const bigImages = [
