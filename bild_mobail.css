@@ -55,19 +55,34 @@ h1 {
 /**
   Hamburger
 **/
-.humburger_icon {
-  background-image: url('assets/humburger_icon.png');
-	width: 50px;
-	height: 50px;
-	}
+.hamburger {
+  position: relative;
+  right: 5%;
+  margin-left: -1em;
+  width: 3em;
+  height: 45px;
+  z-index: 5;
+}
 
+.hamburger div {
+  position: relative;
+  width: 3em;
+  height: 4px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
 
+/**
+Nav Styles
+**/
 .nav {
   position: fixed;
   width: 100%;
   height: 100%;
   background-color: #000000;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: -100%; left: 0; right: 0; bottom: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   transform: scale(0);
@@ -101,9 +116,33 @@ nav a:before {
   left: -0.5em;
   transition: all 0.2s ease-in-out;
 }
+nav a:hover {
+  color: white;
+}
+nav a:hover:before {
+  height: 100%;
+}
 
+/**
+Animations
+**/
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 5px;
+}
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -3px;
+	}
 
-
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
 	.banner-image {
 		box-sizing: border-box;
 		display: block;
@@ -207,7 +246,7 @@ nav a:before {
 	}
 
 	.special_project_description {
-		margin-top: -10%;
+		margin-top: -40%;
 		width: 100%;
 		display: flex;
 		text-align: center;
@@ -323,7 +362,7 @@ nav a:before {
 		transform: rotateY(0.5turn); /* Оставляем только переворот */
 	}
 	
-	.world:active {
+	.world:hover {
 		background-image: url('assets/m_world_hover.png');
 		background-color: white;
 		border-radius: 10px;
