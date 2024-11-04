@@ -362,7 +362,7 @@ Animations
 		transform: rotateY(0.5turn); /* Оставляем только переворот */
 	}
 	
-	.world:hover {
+	.world:active {
 		background-image: url('assets/m_world_hover.png');
 		background-color: white;
 		border-radius: 10px;

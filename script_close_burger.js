@@ -9,3 +9,40 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const closeButton = document.querySelector('.close');
+  if (closeButton) {
+      closeButton.addEventListener('touchstart', () => {
+          closeButton.classList.add('active');
+      });
+      closeButton.addEventListener('touchend', () => {
+          closeButton.classList.remove('active');
+      });
+  }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const closeButton = document.querySelector('.camera');
+  if (closeButton) {
+      closeButton.addEventListener('touchstart', () => {
+          closeButton.classList.add('active');
+      });
+      closeButton.addEventListener('touchend', () => {
+          closeButton.classList.remove('active');
+      });
+  }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const closeButton = document.querySelector('.world');
+  if (closeButton) {
+      closeButton.addEventListener('touchstart', () => {
+          closeButton.classList.add('active');
+      });
+      closeButton.addEventListener('touchend', () => {
+          closeButton.classList.remove('active');
+      });
+  }
+});
